@@ -5,6 +5,7 @@ require_once "Database/Database.php";
 require_once "Controllers/DashboardController.php";
 require_once "Controllers/InventoryController.php";
 require_once "Controllers/SaleController.php";
+require_once "Controllers/CustomerController.php";
 
 
 $route = new Router();
@@ -17,5 +18,9 @@ $route->get("/inventory", [InventoryController::class, 'index']);
 
 // Sales
 $route->get("/sale", [SaleController::class, 'index']);
+
+
+// Customers
+$route->get("/customer", [CustomerController::class, 'index']);
 
 $route->route();
