@@ -23,4 +23,6 @@ $route->get("/sale", [SaleController::class, 'index']);
 // Customers
 $route->get("/customer", [CustomerController::class, 'index']);
 
+
+
 $route->route();
