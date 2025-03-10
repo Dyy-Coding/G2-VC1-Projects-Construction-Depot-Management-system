@@ -25,6 +25,9 @@ $route->get("/sale", [SaleController::class, 'index']);
 $route->get("/customer", [CustomerController::class, 'index']);
 
 // register
-$route->get("/register", [UserController::class, 'register']);
+$route->addRoute('/users/register', [UserController::class , 'register']);
 
 $route->route();
+?>
+
+

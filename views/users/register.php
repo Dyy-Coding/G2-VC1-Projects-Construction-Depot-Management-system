@@ -1,5 +1,4 @@
-
-  <main class="main-content  mt-0">
+ <main class="main-content  mt-0">
     <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signup-cover.jpg'); background-position: top;">
       <span class="mask bg-gradient-dark opacity-6"></span>
     </div>
@@ -55,7 +54,7 @@
               </div>
             </div>
             <div class="card-body">
-              <form role="form">
+              <form action="/register" method="POST">
                 <div class="mb-3">
                   <input type="text" class="form-control" placeholder="Name" aria-label="Name">
                 </div>
@@ -75,7 +74,7 @@
                   </label>
                 </div>
                 <div class="text-center">
-                  <a href="/"><button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button></a>
+                  <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
                 </div>
                 <p class="text-sm mt-3 mb-0">Already have an account? <a href="javascript:;" class="text-dark font-weight-bolder">Sign in</a></p>
               </form>
@@ -85,3 +84,10 @@
       </div>
     </div>
   </main>
+  <?php
+    if (!empty($errors)) {
+        foreach ($errors as $error) {
+            echo "<p style='color:red;'>$error</p>";
+        }
+    }
+  ?>

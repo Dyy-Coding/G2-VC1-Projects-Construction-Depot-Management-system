@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Ensure index.php is used as the main entry point
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
