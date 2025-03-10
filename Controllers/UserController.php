@@ -32,6 +32,14 @@ class UserController {
             require_once "views/users/register.php";
         }
     }
+<<<<<<< HEAD
 }
 
 ?>
+=======
+
+    public function login() {
+        $this->view('users/login');
+    }
+}
+>>>>>>> 086236c980abf6e8b0765422de636dd0d1789ff5
