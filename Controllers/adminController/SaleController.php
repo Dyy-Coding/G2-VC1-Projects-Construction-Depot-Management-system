@@ -1,6 +1,6 @@
 <?php
 class SaleController extends BaseController {
     public function index(){
-        $this->view('sales/sale');
+        $this->view('admin/sales/sale');
     }
 }

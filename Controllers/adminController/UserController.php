@@ -50,7 +50,7 @@ class UserController extends BaseController {
             // If there are errors, return to form with error messages
             if (!empty($errors)) {
                 // Pass errors to the view
-                $this->view('users/register');// or wherever you handle the errors in your view
+                $this->view('admin/users/register');// or wherever you handle the errors in your view
                 // echo "There are errors";
                 return;
             }
@@ -58,6 +58,6 @@ class UserController extends BaseController {
     }
 
     public function login() {
-        $this->view('users/login');
+        $this->view('admin/users/login');
     }
 }

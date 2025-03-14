@@ -2,11 +2,11 @@
 require_once "Router.php";
 require_once "Controllers/BaseController.php";
 require_once "Database/Database.php";
-require_once "Controllers/DashboardController.php";
-require_once "Controllers/InventoryController.php";
-require_once "Controllers/SaleController.php";
-require_once "Controllers/CustomerController.php";
-require_once "Controllers/UserController.php";
+require_once "Controllers/adminController/DashboardController.php";
+require_once "Controllers/adminController/InventoryController.php";
+require_once "Controllers/adminController/SaleController.php";
+require_once "Controllers/adminController/CustomerController.php";
+require_once "Controllers/adminController/UserController.php";
 
 
 $route = new Router();

@@ -2,6 +2,6 @@
 
 class DashboardController extends BaseController {
     public function dashboard() {
-        $this->view('dashboard/dashboard');
+        $this->view('admin/dashboard/dashboard');
     }
 }
